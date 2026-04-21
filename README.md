@@ -33,9 +33,11 @@ Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Ar
 
 ## Data Availability
 
-Raw FASTQ reads at NCBI SRA: BioProject [PRJNA1444495](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1444495) |
-Processed phyloseq object at Zenodo: [DOI to be added upon acceptance] |
-Sample metadata | This repository: `metadata/Exp2433_Metadata.txt` |
+| Resource | Location |
+|---|---|
+| Raw FASTQ reads | NCBI SRA: BioProject [PRJNA1444495](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1444495) |
+| Processed phyloseq object | Zenodo: [DOI to be added upon acceptance] |
+| Sample metadata | This repository: `metadata/metadata.txt` |
 
 ---
 
