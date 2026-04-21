@@ -70,18 +70,28 @@ The sample metadata file (`metadata/metadata.txt`) is a tab-delimited text file 
 
 ### R Environment
 
-R version 4.5.2 (2025-10-31)
-RStudio version 2026.1.0.392
+| Software | Version |
+|---|---|
+| R | 4.5.2 (2025-10-31) |
+| RStudio | 2026.1.0.392 (Apple Blossom) |
+| Platform | macOS Tahoe 26.3.1, aarch64-apple-darwin20 |
 
 ### R Packages
 
-All packages are mentioned in each analysis, specific packages
+All packages are mentioned in each script.
+> **Note:** Install `SpiecEasi` from GitHub for compatibility with Matrix >= 1.5.0:
+> ```r
+> remotes::install_github("zdk123/SpiecEasi")
+> ```
+
 
 ### External Tools
 
-VSEARCH
-VeryFastTree
-Figaro version
+| Tool | Version |
+|---|---|
+| VSEARCH | 2.30.0 |
+| VeryFastTree | 4.0.5 |
+| Figaro | 1.1.2 | 
 
 >**Figaro** was used externally to determine optimal DADA2 trimming parameters prior to running `00_DADA2.R`. The resulting parameters (`trim_F = 304`, `trim_R = 176`) are hardcoded in the script. See [Figaro documentation](https://github.com/Zymo-Research/figaro) for installation and usage.
 ---
