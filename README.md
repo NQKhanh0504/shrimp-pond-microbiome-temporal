@@ -14,8 +14,8 @@ Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Ar
 ```
 .
 ├── README.md
-├── metadata/
-│   └── metadata.txt        # Sample metadata (see Metadata section)
+├── metadata.txt # Sample metadata (see Metadata section)
+│
 └── scripts/
     ├── 00_DADA2.R                  # DADA2 denoising: raw FASTQ -> seqtab_nochim.rds
     ├── 01_16S_Pipeline.R           # 16S processing: seqtab_nochim.rds -> step4_phyloseq_object.rds
@@ -43,7 +43,7 @@ Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Ar
 
 ## Metadata
 
-The sample metadata file (`metadata/metadata.txt`) is a tab-delimited text file with the following columns:
+The sample metadata file (`metadata.txt`) is a tab-delimited text file with the following columns:
 
 | Column | Description |
 |---|---|
