@@ -26,9 +26,9 @@ Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Ar
     ├── 04_AlphaDiversity.R         # Alpha diversity, richness, Shannon, Berger-Parker, Faith's PD
     ├── 05_BetaDiversity.R          # Beta diversity, PCoA, PERMANOVA, BETADISPER
     ├── 06_VennDiagram.R            # ASV sharing across compartments and timepoints
-    ├── 07_RelativeAbundance.R      # Relative abundance stacked bar plots
-    ├── 08_DifferentialAnalysis.R   # ANCOM-BC2 differential abundance analysis
-    └── 09_Co-Occurrence.R          # SPIEC-EASI co-occurrence network analysis
+    ├── 07_Alluvial.R               # Relative abundance stacked bar plots
+    ├── 08_ANCOMBC.R                # ANCOM-BC2 differential abundance analysis
+    └── 09_NetCoMi.R                # SPIEC-EASI co-occurrence network analysis
 ```
 
 ---
