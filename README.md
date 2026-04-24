@@ -8,7 +8,7 @@
 
 This repository contains R scripts for reproducing the microbiome analyses reported in "Temporal dynamics across the shrimp intestine, culture water, and sediment in production ponds". The study characterizes temporal dynamics of microbial communities across three compartments, intestine, pond sediment, and pond water, in Pacific white shrimp (*Litopenaeus vannamei*) production ponds over an 8-week production cycle (Week 0, 2, 4, 6, 8) across four ponds.
 
-Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Archive under BioProject accession **PRJNA1444495**. The processed phyloseq object used as input for all analysis scripts is available at [Zenodo DOI ,  to be added upon acceptance].
+Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Archive under BioProject accession **PRJNA1444495**. The processed phyloseq object used as input for all analysis scripts is available at Zenodo (https://doi.org/10.5281/zenodo.19713431).
 
 ---
 
@@ -26,9 +26,9 @@ Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Ar
     ├── 04_AlphaDiversity.R         # Alpha diversity, richness, Shannon, Berger-Parker, Faith's PD
     ├── 05_BetaDiversity.R          # Beta diversity, PCoA, PERMANOVA, BETADISPER
     ├── 06_VennDiagram.R            # ASV sharing across compartments and timepoints
-    ├── 07_Alluvial.R               # Relative abundance stacked bar plots
-    ├── 08_ANCOMBC.R                # ANCOM-BC2 differential abundance analysis
-    └── 09_NetCoMi.R                # SPIEC-EASI co-occurrence network analysis
+    ├── 07_RelativeAbundance.R      # Relative abundance stacked bar plots
+    ├── 08_DifferentialAnalysis.R   # ANCOM-BC2 differential abundance analysis
+    └── 09_CoOccurrence.R           # SPIEC-EASI co-occurrence network analysis
 ```
 
 ---
@@ -38,7 +38,7 @@ Raw 16S rRNA amplicon sequencing data are deposited in the NCBI Sequence Read Ar
 | Resource | Location |
 |---|---|
 | Raw FASTQ reads | NCBI SRA, BioProject [PRJNA1444495](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1444495) |
-| Processed phyloseq object | Zenodo, [DOI to be added upon acceptance] |
+| Processed phyloseq object | Zenodo (https://doi.org/10.5281/zenodo.19713431) |
 | Sample metadata | This repository, `metadata.txt` |
 
 ---
@@ -123,7 +123,7 @@ The sample metadata file (`metadata.txt`) is a tab-delimited text file with the 
 
 ## How to Run
 
-Scripts must be run in numbered order. Each script reads from and writes to an `output/` directory. Update file paths in the configuration section at the top of each script before running. The processed phyloseq object (`step4_phyloseq_object.rds`) can alternatively be downloaded directly from Zenodo [DOI to be added] to skip scripts `00` and `01`.
+Scripts must be run in numbered order. Each script reads from and writes to an `output/` directory. Update file paths in the configuration section at the top of each script before running. The processed phyloseq object (`step4_phyloseq_object.rds`) can alternatively be downloaded directly from Zenodo (https://doi.org/10.5281/zenodo.19713431) to skip scripts `00` and `01`.
 
 | Script | Input | Output |
 |---|---|---|
